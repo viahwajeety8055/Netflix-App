@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    font-family:  Helvetica Neue, sans-serif;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    max-width: 1500px;
+}
+
+/* Navbar Section */
+
+.navbar{
+    background-color: black;
+    opacity: 0.8;
+    justify-content: center;
+    height: 80px;
+}
+
+.navbar .parent{
+    width: 100%;
+    height: 80px;
+    padding: 1rem 0 1rem 0;
+    justify-content: space-between;
+}
+
+.navbar .img-logo{
+    flex-basis: 10%;
+}
+
+.navbar .right-side{
+    flex-basis: 90%;
+    justify-content: space-between;
+    padding-left: 1rem;
+}
+
+.navbar .menu{
+    align-content: flex-start;
+}
+
+.navbar .menu-items{
+    gap: 2rem;
+}
+
+.navbar .menu-items a{
+    color: white;
+}
+
+.navbar .right-items{
+    gap: 2rem;
+
+}
+
+.navbar .right-items a{
+    color: white;
+    font-size: 1rem;
+}
+
+.navbar .right-items a:hover,
+.navbar .menu-items a:hover{
+    color: red;
+}
+
+.logo-search{
+    width: 2rem;
+}
+
+.main{
+    background-image: url(./images/strangerthings.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+
+.title{
+    width: 300px;
+    margin-left: 1rem;
+    margin-top: 5rem;
+}
+
+.title .parent{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 1rem ;
+}
+
+.title .first{
+    gap: 0.5rem;
+}
+
+.title .first p{
+    font-weight: 800;
+}
+
+.title .first img{
+    width: 20px;
+    height: 30px;
+}
+
+.title .heading span{
+    padding-left: 2rem;
+}
+
+.title .heading h1{
+    font-size: 3rem;
+}
+
+.title .play{
+    gap: 0.5rem;
+}
+
+.title .play-item{
+    background-color: white;
+    color: black;
+    padding: 0.4rem 1.5rem;
+    border-radius: 5px;
+}
+
+.title .play-item p{
+    font-weight: 600;
+}
+
+.title .plus-item{
+    background-color: grey;
+    color: white;
+    padding: 0.4rem 1.5rem;
+    border-radius: 5px;
+}
+
+.title .plus-item p{
+    font-weight: 600;
+}
+
+/* Video Container section */
+
+
+.video-container{
+    margin-top:80px;
+    margin-left: 2rem;
+}
+
+.video-container .parent{
+    flex-direction: column;
+    overflow-x: scroll;
+}
+
+.video-container .parent .con-title{
+    position: fixed;
+    align-self: flex-start;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.video-container .parent::-webkit-scrollbar {
+    display: none;
+  }
+
+.video-container .hold-video{
+    margin-top: 2rem;
+    margin-left: 21rem;
+}
+
+
+
+/* Card Design */
+
+.card-design{
+    margin: 0.2rem;
+}
+
+.card-design img{
+    width: 300px;
+    height: 140px;
+    background-size: cover;
+    border-radius: 1rem;
+}
+
+.card-design img:hover{
+    box-shadow: 0 0 14px grey;
+}
+
+
